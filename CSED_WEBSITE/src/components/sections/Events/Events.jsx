@@ -3,29 +3,31 @@ import gsap from "gsap";
 import { Draggable } from "gsap/Draggable";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import CC from "./eventImages/CC.png";
+import A2A from "./eventImages/A2A.png";
+import C4C from "./eventImages/C4C.png";
 
 gsap.registerPlugin(ScrollTrigger, Draggable);
 
 const Events = () => {
   const ss = [
-    { id: "01", title: "Coral Habitats", subtitle: "Maldives Atolls", image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&q=80&w=800", offset: "-translate-y-16", rotation: "-rotate-4", height: "h-[120px] md:h-[220px]", width: "w-[100px] md:w-[200px]" },
-    { id: "02", title: "The Atlantic Deep", subtitle: "High-Seas Sanctuaries", image: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&q=80&w=800", offset: "translate-y-24", rotation: "rotate-2", height: "h-[40px] md:h-[110px]", width: "w-[60px] md:w-[150px]" },
-    { id: "03", title: "Web of Life", subtitle: "North Sea Ecosystem", image: "https://images.unsplash.com/photo-1682687220063-4742bd7fd538?auto=format&fit=crop&q=80&w=800", offset: "-translate-y-6", rotation: "-rotate-5", height: "h-[160px] md:h-[260px]", width: "w-[120px] md:w-[240px]" },
-    { id: "04", title: "Kelp Forests", subtitle: "Temperate Zone", image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=800", offset: "translate-y-12", rotation: "rotate-3", height: "h-[60px] md:h-[140px]", width: "w-[80px] md:w-[180px]" },
+    { id: "01", title: "Start Up Street X", subtitle: "2025", image: CC, offset: "-translate-y-16", rotation: "rotate-3", height: "h-[120px] md:h-[220px]", width: "w-[100px] md:w-[200px]" },
+    { id: "02", title: "Start Up Street IX", subtitle: "2024", image: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&q=80&w=800", offset: "translate-y-24", rotation: "rotate-2", height: "h-[60px] md:h-[130px]", width: "w-[80px] md:w-[170px]" },
+    { id: "03", title: "Start up Street IIIV", subtitle: "2023", image: CC, offset: "-translate-y-6", rotation: "-rotate-5", height: "h-[160px] md:h-[260px]", width: "w-[120px] md:w-[240px]" },
+    { id: "04", title: "Start Up Street IIV", subtitle: "2022", image: "https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&fit=crop&q=80&w=800", offset: "translate-y-12", rotation: "rotate-3", height: "h-[60px] md:h-[140px]", width: "w-[80px] md:w-[180px]" },
   ];
 
   const a2a = [
-    { id: "05", title: "Benthic Trench", subtitle: "Mariana Region", image: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&q=80&w=800", offset: "-translate-y-18", rotation: "-rotate-2", height: "h-[100px] md:h-[190px]", width: "w-[140px] md:w-[260px]" },
-    { id: "06", title: "Seagrass Meadows", subtitle: "Carbon Sinks", image: "https://images.unsplash.com/photo-1508873696983-2df515122519?auto=format&fit=crop&q=80&w=800", offset: "translate-y-32", rotation: "rotate-5", height: "h-[20px] md:h-[90px]", width: "w-[50px] md:w-[130px]" },
-    { id: "07", title: "Pelagic Ocean", subtitle: "Open Pacific", image: "https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&fit=crop&q=80&w=800", offset: "-translate-y-10", rotation: "-rotate-3", height: "h-[140px] md:h-[230px]", width: "w-[110px] md:w-[220px]" },
-    { id: "08", title: "Lagoon Reserves", subtitle: "Bora Bora Reefs", image: "https://images.unsplash.com/photo-1498855926480-d98e83099315?auto=format&fit=crop&q=80&w=800", offset: "translate-y-8", rotation: "rotate-4", height: "h-[80px] md:h-[160px]", width: "w-[90px] md:w-[190px]" },
+    { id: "05", title: "Auction 2 Action III", subtitle: "2025", image: A2A, offset: "-translate-y-18", rotation: "-rotate-2", height: "h-[100px] md:h-[190px]", width: "w-[140px] md:w-[260px]" },
+    { id: "06", title: "Auction 2 Action II", subtitle: "2024", image: A2A, offset: "translate-y-32", rotation: "rotate-5", height: "h-[40px] md:h-[110px]", width: "w-[70px] md:w-[150px]" },
+    { id: "07", title: "Auction 2 Action I", subtitle: "2023", image: "https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&fit=crop&q=80&w=800", offset: "-translate-y-10", rotation: "-rotate-3", height: "h-[140px] md:h-[230px]", width: "w-[110px] md:w-[220px]" },
   ];
 
   const c4c = [
-    { id: "09", title: "Abyssal Plains", subtitle: "Deep Basin", image: "https://images.unsplash.com/photo-1468581264429-2548ef9eb732?auto=format&fit=crop&q=80&w=800", offset: "-translate-y-18", rotation: "-rotate-4", height: "h-[110px] md:h-[200px]", width: "w-[130px] md:w-[250px]" },
-    { id: "10", title: "Mangrove Margins", subtitle: "Estuary Zones", image: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&q=80&w=800", offset: "translate-y-20", rotation: "rotate-2", height: "h-[50px] md:h-[120px]", width: "w-[70px] md:w-[160px]" },
-    { id: "11", title: "Midnight Zone", subtitle: "Bioluminescent Depths", image: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&q=80&w=800", offset: "translate-y-22", rotation: "-rotate-5", height: "h-[130px] md:h-[240px]", width: "w-[120px] md:w-[230px]" },
-    { id: "12", title: "Seamount Chain", subtitle: "Underwater Peaks", image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&q=80&w=800", offset: "-translate-y-16", rotation: "rotate-3", height: "h-[70px] md:h-[150px]", width: "w-[80px] md:w-[170px]" },
+    { id: "09", title: "Code 4 Change 25", subtitle: "2025", image: C4C, offset: "-translate-y-18", rotation: "-rotate-4", height: "h-[110px] md:h-[200px]", width: "w-[130px] md:w-[250px]" },
+    { id: "10", title: "Code 4 Change 24", subtitle: "2024", image: C4C, offset: "translate-y-20", rotation: "rotate-2", height: "h-[50px] md:h-[120px]", width: "w-[70px] md:w-[160px]" },
+    { id: "11", title: "Code 4 Change 23", subtitle: "2023", image: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&q=80&w=800", offset: "translate-y-18", rotation: "-rotate-5", height: "h-[130px] md:h-[240px]", width: "w-[120px] md:w-[230px]" },
+    { id: "12", title: "Code 4 Change 22", subtitle: "2022", image: C4C, offset: "-translate-y-16", rotation: "rotate-3", height: "h-[70px] md:h-[150px]", width: "w-[80px] md:w-[170px]" },
   ];
 
   // Refs
@@ -172,7 +174,7 @@ const Events = () => {
           const glowAlpha = gsap.utils.interpolate(0, 0.8, progress);
 
           gsap.to(el, {
-            color: gsap.utils.interpolate("#fca5a5", "#dc2626", progress),
+            color: gsap.utils.interpolate("#ffffff", "#dc2626", progress),
             filter: `drop-shadow(0px 0px ${glowBlur}px rgba(239, 68, 68, ${glowAlpha}))`,
             duration: 0.1,
             overwrite: "auto",
@@ -219,7 +221,7 @@ const Events = () => {
       return (
         <div
           key={item.id}
-          className={`transition-all duration-300 ease-out ${
+          className={`pt-8 transition-all duration-300 ease-out ${
             isCardHovered ? "translate-y-0" : item.offset
           }`}
         >
@@ -244,8 +246,8 @@ const Events = () => {
               </div>
 
               <div className="relative z-10 p-6 md:p-8 h-full flex flex-col justify-between">
-                <span className="text-xs font-mono text-red-400/80 tracking-widest">
-                  {item.id} / 15
+                <span className="text-s font-mono text-red-400/80 tracking-widest">
+                  {item.subtitle}
                 </span>
                 <div className="space-y-1">
                   <h3 className="text-xl md:text-2xl font-light text-white group-hover:text-red-200 transition-colors">
@@ -263,7 +265,7 @@ const Events = () => {
     <section id="events" className="min-h-screen py-10 w-full overflow-x-hidden">
       <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] bg-[#030a16]">
         <div className="absolute -top-40 -left-40 w-96 h-96 bg-red-600/20 blur-[140px] rounded-full pointer-events-none" />
-        <h2 className="text-4xl font-bold mb-6 px-8 text-white">Events</h2>
+        <h2 className="text-5xl font-bold mb-6 px-20 pt-5 text-amber-700 text-shadow-2xl [text-shadow:_4px_4px_6px_theme(colors.black)]">Events</h2>
         <div className="relative w-full h-[95vh] bg-[#030a16] text-slate-100 overflow-hidden font-sans select-none">
           <div className="absolute -top-40 -left-40 w-96 h-96 bg-red-600/20 blur-[140px] rounded-full pointer-events-none" />
           <div className="absolute -bottom-40 -right-40 w-76 h-66 bg-red-600/20 blur-[140px] rounded-full pointer-events-none" />
